@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <script src="Cell.js"></script>
+    <script src="Board.js"></script>
+    <script src="Logger.js"></script>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+
+
+
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper blue darken-4">
+                <a href="#" class="brand-logo center"><span class="material-icons">grid_on
+                    </span> Sudoku playground
+                </a>
+            </div>
+        </nav>
+
+    </div>
+
+    <div class="container">
+        <div class="row"></div>
+        <div class="row">
+            <div class="container-custom">
+                <div class="content center-align" id="sketch-holder"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script defer src="sketch.js"></script>
+
+
+    <div class="divider"></div>
+
+
+    <div class="section center" id="buttons">
+        <a class="waves-effect waves-light blue darken-3 btn-large" id="1">1</a>
+        <a class="waves-effect waves-light blue darken-3 btn-large" id="2">2</a>
+        <a class="waves-effect waves-light blue darken-3 btn-large" id="3">3</a>
+        <a class="waves-effect waves-light blue darken-3 btn-large" id="4">4</a>
+        <a class="waves-effect waves-light blue darken-3 btn-large" id="5">5</a>
+        <a class="waves-effect waves-light blue darken-3 btn-large" id="6">6</a>
+        <a class="waves-effect waves-light blue darken-3 btn-large" id="7">7</a>
+        <a class="waves-effect waves-light blue darken-3 btn-large" id="8">8</a>
+        <a class="waves-effect waves-light blue darken-3 btn-large" id="9">9</a>
+        <a class="waves-effect waves-light red btn-large" id="remove-cell"><i
+                class="material-icons center">backspace</i></a>
+        <a class="waves-effect waves-light grey btn-large" id="lock-cell"><i class="material-icons center"
+                id="lock-cell-icon">lock</i></a>
+        <a class="waves-effect waves-light teal btn-large" id="info-cell"><i class="material-icons center">info</i></a>
+    </div>
+    <div class="section center" id="buttons">
+        <a class="btn-floating waves-light teal btn-large" id="solve"><i class="material-icons center">send</i></a>
+        <a class="btn-floating waves-light teal btn-large" id="check"><i
+                class="material-icons center">done_outline</i></a>
+        <a class="waves-effect waves-light yellow darken-4 btn-large" id="load-example"><i
+                class="material-icons">looks_one</i></a>
+        <a class="waves-effect waves-light red btn-large" id="delete-all"><i
+                class="material-icons center">delete</i></a>
+        <a class="waves-effect waves-light grey btn-large" id="lock-all"><i class="material-icons center">lock</i></a>
+        <a class="waves-effect waves-light teal btn-large" id="info-all"><i class="material-icons center">info</i></a>
+    </div>
+    <script defer src="script.js"></script>
+
+</body>
+
+</html>

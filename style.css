@@ -1,0 +1,22 @@
+html, body {
+   margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+.container-custom {
+  display: grid;
+}
+  
+.content, .overlay {
+  grid-area: 1 / 1;
+}
+
+.overlay{
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
